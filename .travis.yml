@@ -1,0 +1,11 @@
+env:
+  global:
+    # Ubuntu version
+    - LINUX_DIST=trusty
+  matrix:
+    - PACKAGE=SEACAS MODE=notest
+    - PACKAGE=Kokkos MODE=full
+script:
+  - echo $PACKAGE
+  - echo $MODE
+  - if [[ "$MODE" = "full" ]]; then echo "Run full"; fi
