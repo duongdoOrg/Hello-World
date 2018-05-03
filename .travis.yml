@@ -8,4 +8,4 @@ env:
 script:
   - echo $PACKAGE
   - echo $MODE
-  - if [[ "$MODE" = "full" ]]; then echo "Run full test"; fi
+  - if [[ "$MODE" = "full" ]]; then echo "Run full test now"; fi
