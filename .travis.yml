@@ -1,3 +1,5 @@
+os: osx
+
 env:
   global:
     # Ubuntu version
@@ -5,6 +7,10 @@ env:
   matrix:
     - PACKAGE=SEACAS MODE=notest
     - PACKAGE=Kokkos MODE=full
+
+before_install:    
+  - brew install gcc
+    
 script:
   - echo $PACKAGE
   - echo $MODE
