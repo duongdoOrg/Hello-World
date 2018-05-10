@@ -8,8 +8,9 @@ env:
     - PACKAGE=SEACAS MODE=notest
     
 before_install:    
-  - brew tap homebrew/science
-  - brew install openblas
+  - brew cask uninstall oclint
+  - brew install gcc
+  - brew install lapack
     
 script:
   - echo $PACKAGE
