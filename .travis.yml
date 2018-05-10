@@ -11,6 +11,11 @@ before_install:
   - brew cask uninstall oclint
   - brew install gcc
   - brew install lapack
+  - brew install openblas
+  - brew install mpich
+  - brew install boost
+  - brew install netcdf
+  - brew install libmatio
     
 script:
   - echo $PACKAGE
